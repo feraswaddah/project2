@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج تسجيل البيانات</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <!-- القسم الأول: البيانات الأساسية -->
+        <fieldset>
+            <legend>البيانات الأساسية</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <td><label>الاسم الأول<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="first_name"></td>
+                    <td><label>اسم الأب<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="father_name"></td>
+                </tr>
+                <tr>
+                    <td><label>اسم الجد<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="grand_name"></td>
+                    <td><label>اسم العائلة<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="family_name"></td>
+                </tr>
+                <tr>
+                    <td><label>نوع الهوية:</label></td>
+                    <td colspan="3">
+                        <input type="radio" name="id_type" value="بطاقة أحوال"> بطاقة أحوال
+                        <input type="radio" name="id_type" value="إقامة"> إقامة
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>رقم الهوية/رقم الإقامة<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="id_number"></td>
+                    <td><label>الجنس:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="ذكر"> ذكر
+                        <input type="radio" name="gender" value="أنثى"> أنثى
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>جهة العمل:</label></td>
+                    <td><input type="text" name="work_place"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>تاريخ الإصدار:</label></td>
+                    <td><input type="text" name="issue_date"></td>
+                    <td><label>مصدر الهوية:</label></td>
+                    <td><input type="text" name="id_source"></td>
+                </tr>
+                <tr>
+                    <td><label>ص.ب:</label></td>
+                    <td><input type="text" name="po_box"></td>
+                    <td><label>المدينة:</label></td>
+                    <td>
+                        <select name="city">
+                            <option value="">فضلاً اختر</option>
+                            <option value="الرياض">الرياض</option>
+                            <option value="جدة">جدة</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>الرمز البريدي:</label></td>
+                    <td><input type="text" name="postal_code"></td>
+                    <td><label>الجنسية:</label></td>
+                    <td>
+                        <select name="nationality">
+                            <option value="سعودي">سعودي</option>
+                            <option value="أخرى">أخرى</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- القسم الثاني: بيانات التواصل -->
+        <fieldset>
+            <legend>بيانات التواصل</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <td><label>الجوال<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="mobile"></td>
+                    <td><label>الهاتف:</label></td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><label>فاكس:</label></td>
+                    <td><input type="text" name="fax"></td>
+                    <td><label>البريد الإلكتروني<font color="red">*</font>:</label></td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- القسم الثالث: بيانات المؤهل العلمي -->
+        <fieldset>
+            <legend>بيانات المؤهل العلمي</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <td><label>التخصص:</label></td>
+                    <td colspan="3">
+                        <input type="radio" name="specialty" value="محاسبة"> محاسبة
+                        <input type="radio" name="specialty" value="أخرى"> أخرى
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>المؤهل العلمي:</label></td>
+                    <td colspan="3">
+                        <input type="radio" name="degree" value="بكالوريوس"> بكالوريوس
+                        <input type="radio" name="degree" value="ماجستير"> ماجستير
+                        <input type="radio" name="degree" value="دكتوراه"> دكتوراه
+                        <input type="radio" name="degree" value="أخرى"> أخرى
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>اسم الجامعة:</label></td>
+                    <td colspan="3"><input type="text" name="university" size="40"></td>
+                </tr>
+                <tr>
+                    <td><label>التقدير:</label></td>
+                    <td colspan="3"><input type="text" name="grade" size="40"></td>
+                </tr>
+                <tr>
+                    <td><label>المؤهل المهني:</label></td>
+                    <td colspan="3">
+                        <input type="radio" name="prof_qual" value="CA"> CA
+                        <input type="radio" name="prof_qual" value="CPA"> CPA
+                        <input type="radio" name="prof_qual" value="SOCPA"> SOCPA
+                        <input type="radio" name="prof_qual" value="أخرى"> أخرى
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <!-- زر الإرسال -->
+        <input type="submit" value="إرسال طلبك">
+
+    </form>
+
+</body>
+</html>
